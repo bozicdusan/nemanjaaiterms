@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .language-selector {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="language-selector">
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('sr')">Srpski</button>
+  </div>
+
+  <div id="terms-content">
+    <!-- Terms of Service Content in English (default) -->
+    <div class="terms" id="en-terms">
+      <h1>Terms of Service</h1>
+      
+      <h2>1. Introduction</h2>
+      <p>Welcome to NemanjaAI! These Terms of Service ("Terms") govern your use of our mobile application "NemanjaAI" and related services. By using the App, you agree to these Terms. If you do not agree with these Terms, please do not use the App.</p>
+
+      <h2>2. User Accounts</h2>
+      <p>You are responsible for maintaining the confidentiality of your account information. You can delete your account by contacting us at ainemanjaapp@gmail.com. Upon account deletion, we will stop processing your data, subject to legal requirements.</p>
+
+      <h2>3. Subscriptions</h2>
+      <p>The app offers monthly subscriptions via Google Play and the Apple App Store. Payments are processed through these platforms, and users must follow the respective platform’s process for subscription management.</p>
+      <p>To cancel a subscription, go to your account settings in either the Apple App Store or Google Play. Cancellations will take effect at the end of the current billing cycle, and no refunds will be issued for partial periods.</p>
+
+      <h2>4. Data Collection and Use</h2>
+      <p>We collect data such as images processed for nutritional analysis. We use Firebase for authentication and Google services for data management. For more information, refer to our <a href="https://privacy.nemanja-ai.com">Privacy Policy</a>.</p>
+
+      <h2>5. Limitation of Liability</h2>
+      <p>To the extent permitted by law, we disclaim all warranties regarding the app's performance, functionality, or fitness for a particular purpose. We are not liable for any damages arising from the use of the app.</p>
+
+      <h2>6. Termination</h2>
+      <p>We may suspend or terminate your access to the App at any time without notice for any violation of these Terms.</p>
+
+      <h2>7. Changes</h2>
+      <p>We may update these Terms at any time. Any changes will be posted on this page, and by continuing to use the app, you accept the updated terms. Please review this page periodically for updates.</p>
+
+      <h2>8. Governing Law</h2>
+      <p>These Terms are governed by the laws of the Republic of Serbia. Any disputes will be resolved in the competent courts of Belgrade.</p>
+
+      <h2>9. Contact</h2>
+      <p>If you have any questions about these Terms, please contact us at ainemanjaapp@gmail.com.</p>
+    </div>
+
+    <!-- Terms of Service Content in Serbian -->
+    <div class="terms" id="sr-terms" style="display: none;">
+      <h1>Услови коришћења</h1>
+      
+      <h2>1. Увод</h2>
+      <p>Добродошли у NemanjaAI! Ови Услови коришћења ("Услови") регулишу ваше коришћење наше мобилне апликације "NemanjaAI" и сродних услуга. Коришћењем Апликације слажете се са овим Условима. Ако се не слажете са овим Условима, немојте користити Апликацију.</p>
+
+      <h2>2. Кориснички налози</h2>
+      <p>Одговорни сте за чување поверељивости података вашег налога. Можете да избришете свој налог контактирањем нас на ainemanjaapp@gmail.com. Након брисања налога, престаћемо са обрадом ваших података, у складу са законским обавезама.</p>
+
+      <h2>3. Претплате</h2>
+      <p>Апликација нуди месечне претплате преко Google Play и Apple App Store. Плаћања се обрађују путем ових платформи, а корисници морају да прате процес управљања претплатама преко ових платформи.</p>
+      <p>Да бисте отказали претплату, идите на подешавања налога у Apple App Store или Google Play. Отказивање ће важити на крају тренутног периода наплате, а поврат новца неће бити издат за делимичне периоде.</p>
+
+      <h2>4. Прикупљање и коришћење података</h2>
+      <p>Прикупљамо податке као што су слике обрађене ради анализе нутритивних информација. За аутентификацију користимо Firebase, а за управљање подацима Google услуге. За више информација, погледајте нашу <a href="https://privacy.nemanja-ai.com">Политику приватности</a>.</p>
+
+      <h2>5. Ограничење одговорности</h2>
+      <p>У границама дозволеним законом, одричемо се свих гаранција у вези са перформансама апликације, функционалношћу или погодности за одређену сврху. Ми нисмо одговорни за било какву штету која проистиче из коришћења апликације.</p>
+
+      <h2>6. Прекиди</h2>
+      <p>Можемо суспендовати или отказати ваш приступ апликацији у било ком тренутку без претходне најаве у случају кршења ових Услова.</p>
+
+      <h2>7. Измене</h2>
+      <p>Можемо ажурирати ове Услове у било ком тренутку. Све измене ће бити објављене на овој страници, а наставком коришћења апликације прихватате нове услове. Периодично прегледајте ову страницу за ажурирања.</p>
+
+      <h2>8. Примењиво право</h2>
+      <p>Ови Услови се примењују у складу са законима Републике Србије. Сви спорови ће бити решавани на надлежним судовима у Београду.</p>
+
+      <h2>9. Контакт</h2>
+      <p>Ако имате било каква питања у вези са овим Условима, контактирајте нас на ainemanjaapp@gmail.com.</p>
+    </div>
+  </div>
+
+  <script>
+    function setLanguage(language) {
+      const enTerms = document.getElementById('en-terms');
+      const srTerms = document.getElementById('sr-terms');
+      if (language === 'en') {
+        enTerms.style.display = 'block';
+        srTerms.style.display = 'none';
+      } else if (language === 'sr') {
+        enTerms.style.display = 'none';
+        srTerms.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>
